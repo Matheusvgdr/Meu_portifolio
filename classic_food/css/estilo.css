@@ -1,0 +1,251 @@
+/*Fontes*/
+@font-face { 
+    font-family: "BillionaireMediumGrunge";
+    src: url(../font/BillionaireMediumGrunge.woff);}
+@font-face { 
+    font-family: "MADECannes.woff";
+    src: url(../font/MADECannes.woff);}
+@font-face { 
+    font-family: "NixieOne.woff";
+    src: url(../font/NixieOne.woff);}
+@font-face { 
+    font-family: "Riesling.woff";
+    src: url(../font/Riesling.woff);}
+@font-face { 
+    font-family: "Typewriter_Condensed";
+    src: url(../font/Typewriter_Condensed.woff);}
+
+/*-----------------------------------------------------------*/
+/* Topo */
+#header{
+    font-family:"BillionaireMediumGrunge";
+}
+#conteudo-titulo{
+    position: absolute;
+    top:40% ;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+#conteudo-titulo h1#titulo{
+    color: #fff;
+    background: #590202;
+    border-radius: 20px;
+    padding: 18px;
+    letter-spacing: 5px;
+    text-transform: uppercase; 
+ }
+ 
+ ul{
+     background-color: /*#F2CF66*/ #fff;
+     border-radius: 20px;
+ }
+ #header ul li a{
+     font-size: 26px;
+     color: black;
+     margin-left: 10px;
+     transition: 0.5s;
+ }
+ #header ul li a:hover{
+color: #401818;
+}
+ /*-----------------------------------------------------*/
+ 
+ /*Corpo*/
+ #conteudo h4{
+    text-align: center;
+    font-family:"BillionaireMediumGrunge";
+    font-size: 50px;
+}
+.borda{
+    text-align: center;
+    background-color: black;
+    color: transparent;
+    height: 2px;
+    border-radius: 20px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px; 
+}
+.borda2{
+    text-align: center;
+    background-color: black;
+    color: transparent;
+    height: 2px;
+    border-radius: 20px;
+    width: 430px;
+    margin: auto;
+    margin-bottom: 30px; 
+}
+.borda3{
+    text-align: center;
+    background-color: black;
+    color: transparent;
+    height: 2px;
+    border-radius: 20px;
+    width: 530px;
+    margin: auto;
+    margin-bottom: 30px; 
+}
+.borda4{
+    text-align: center;
+    background-color: black;
+    color: transparent;
+    height: 2px;
+    border-radius: 20px;
+    width: 470px;
+    margin: auto;
+    margin-bottom: 30px; 
+}
+
+ /*Drinks*/ 
+ #drinks{
+    padding: 30px 0px;
+
+ }
+ #drinks img{
+     border-radius: 20px;
+ }
+ #drinks p{
+     text-align: center;
+     font-family: "Typewriter_Condensed";
+     font-size: 26px;
+     margin-top: 5px;
+ }
+ #drinks a{
+     opacity: 0.8;
+     transition: 0.6s;
+ }
+ #drinks a:hover{
+     opacity: 1;
+ }
+ /*-------------------------------------------------*/
+
+ /*Brunch*/
+ #brunch{
+     background: #F2CF66;
+     padding: 30px 0px;
+     margin: 0;
+ }
+ #brunch img{
+    border-radius: 20px;
+    margin: 15px;
+ }
+ 
+ /*-----------------------------------------*/
+
+ /*Pratos principais*/
+#lunch{
+    padding: 30px 0px;
+    background: #401818;
+    color: #fff;
+    margin: 0;
+}
+ #lunch img{
+    border-radius: 20px;
+    margin: 7px;
+ }
+ #lunch p{
+    text-align: center;
+    font-family: "Typewriter_Condensed";
+    font-size: 26px;
+  
+ }
+/*--------------------------------------*/
+/*Sobremesas*/
+#sobremesa h4{
+    margin-top: 30px;
+}
+.caixa1{
+    background-image: url(../img/sobre5.jpg);
+}
+.caixa2{
+    background-image: url(../img/sobre4.jpg);
+}
+.caixa3{
+    background-image: url(../img/sobre3.jpg);
+}
+.caixa4{
+    background-image: url(../img/sobre2.jpg);
+}
+.caixa1, .caixa2, .caixa3,.caixa4{
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+.conteudo-titulo{
+    position: absolute;
+    left: 0;
+    top:45% ;
+    width: 100%;
+    text-align: center;
+}
+.conteudo-titulo span.titulo{
+   color: #fff;
+   font-family: "BillionaireMediumGrunge";
+   background-color: #BF0436;
+   border-radius: 20px;
+   padding: 18px;
+   font-size: 35px;
+   letter-spacing: 5px;
+   text-transform: uppercase; 
+}
+/*------------------------------------------------------*/
+/*Info*/
+#sobre{
+    font-family: "Typewriter_Condensed";
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    margin: auto;
+}
+#sobre p{
+    text-align: justify;
+    margin: 10px;
+}
+#icons{
+padding: 15px 0px;
+margin: auto;
+}
+
+#mapa{
+    font-family: "Typewriter_Condensed";
+    text-align: center;
+    padding-top: 20px;
+    margin: auto;
+}
+/*-------------------------------------------*/
+/*Rodape*/
+footer{
+    font-family: "Typewriter_Condensed";
+    font-size: 20px;
+    text-align: center;
+    background: #F28705;
+    padding: 17px 0px;
+}
+/*--------------------------------*/
+/*responsividade*/
+/*extra small*/
+@media (max-width: 575.98px){
+    
+}
+/*small*/
+@media (min-width: 575px) and (max-width: 767.98px){
+   
+}
+/*Medium*/
+@media (min-width: 768px) and (max-width: 991.98px){
+   
+}
+/*Large*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+   
+}
+/*Extra large*/
+@media (min-width: 1200px){
+   
+}

@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 1.5rem;
+    background-color: #f9f9f9;
+    font-family: "Teko";
+}
+/*Tela splash*/
+.intro{
+    position: relative;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+.logo-intro{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+.geek{
+    color: #5151fd;
+}
+.mundo{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+.mundo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+.mundo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+/*Final da tela splash*/
+
+/*Início do topo*/
+#logo{
+    padding: 10px;
+    letter-spacing: 4px;
+    display: inline-block;
+}
+#joystick{
+    float: right;
+    padding-right: 28px;
+}
+#menu{ /*Minha anotação* Ficou dessa forma pois foi definido um tamanho e o position relative mudou a localização dos itens baseado no espaço que ja tinha, por isso ficou fora do bloco*/
+    float: right;
+    width: 600px;
+    display: block;  
+}
+#cabecalho{
+    background-color: #222;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    position: fixed;/*Parou de funcionar depois do splash*/
+    top: 0;
+    width: 100%; 
+    z-index: 1;/*position: absolute; top: 0;* Foi possível resolver com o index */
+}
+#menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 17px;
+    position: relative;
+    font-size: 22px;
+    top: 20px;
+    right: 0;   
+}
+#menu a:after{
+    content: "";/*O que é isso? eu imagino que as áspas foram pra declarar a tag né?*/
+    position: absolute;
+    background: linear-gradient(70deg, #ff3c78 1%,#973cff 99%);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 0.4s;
+}
+/*Essa tag after seria o que vai acontecer depois né?*/
+#menu a:hover:after{
+    width: 100%;
+}
+#cor{
+    color: #5151fd;
+    width: 0;
+    transition: 0.3s;
+}
+/*Final do topo*/
+
+
+#corpo{
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    /*width: 100vw;*/
+    margin: 0 auto;
+    z-index: 0;
+    /*border: 1px solid #973cff;*/
+}
+.info{
+    padding-left:70px ;
+}
+#lateral a{
+    /*color: #222;*/
+    text-decoration: none;
+    padding: 5px 17px; 
+    font-size: 22px;
+}
+#lateral a:after{
+    content: "";/*O que é isso? eu imagino que as áspas foram pra declarar a tag né?*/
+    position: absolute;
+    background: linear-gradient(70deg, #3cc8ff 10% , #5151fd 90%);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 0.4s;
+}
+#lateral a:hover:after{
+    width: 100%;
+}
+#postagens{
+    width: 50vw;
+    float: left;
+    
+}
+.post{
+    /*border: 2px solid tomato;*/
+    width: 815px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.post p{
+    height: 36px;
+    transition: 0.4s;
+    color: transparent;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+.post span{
+    color: white;
+    font-size: 27px;
+    text-align: center;
+}
+.post p:hover{
+    height: 100px;
+    color: white;
+}
+.post a{
+    text-decoration:none;
+    color: white;
+    right: -270px;
+    bottom: 64px;
+    position: relative;
+    transition: 0.4s;
+}
+.post a:hover{
+    color: #ff3c6d;
+}
+
+.fotos{
+    border-radius: 8px;
+    /*border: 1px solid tomato;*/
+    width: 815px;
+    transition: 0.4s;
+    margin-bottom: 7px;
+    opacity: 1;
+    display: block;
+}
+
+/*.fotos:hover{
+    width: 825px;
+    opacity: 0.8;
+}*/
+#postagens p{
+    background-color: #1d1e20;
+    margin-bottom: 10px;
+    text-align: center;
+    /*border: 1px solid tomato;*/
+    width: 815px;
+}
+span{
+   /* border: 1px solid tomato;*/
+    text-align: center;
+
+}
+.post-lateral{
+    width: 405px;
+    float: right;
+   /* border: 1px solid tomato;*/
+    padding-right: 40px;
+    border-radius: 8px;
+    background-color: lightgray;
+    margin: 40px 20px 0px 0px;
+    padding: 20px;
+}
+#lateral a{
+    color: #222;
+    float: right;
+    position: relative;
+
+}
+h2, h3{
+    text-align: center;
+}
+#rodape{
+    text-align: center;
+    padding: 15px;
+    background-color: #ccc;
+    clear: both;
+    /*border: 1px solid tomato;*/
+}
+    
+    
